@@ -11,7 +11,7 @@ def play():
         user = input("Rock, Paper, Scissors (r/p/s): ").lower()
         if user.isalpha():
             if user == bot:
-                print(f"\nYour choice is same ({bot.upper()})\n")
+                print(f"\nYour choices are same ({bot.upper()})\n")
                 pass
             elif is_win(user, bot) == True:
                 print(f"You won ({user.upper()}), The opponent is {bot.upper()}\n")
@@ -26,4 +26,5 @@ def play():
             print("\nYou can only input (r, p, s)\n")
             pass
     
+
 play()
